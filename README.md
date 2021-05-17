@@ -66,13 +66,13 @@ Connected.
 spanner> show tables;
 Empty set (0.01 sec)
 
-spanner> create table todo(id int64, title string(max)) primary key(id);
+$ spanner> create table todo(id int64, title string(max)) primary key(id);
 Query OK, 0 rows affected (0.00 sec)
 
-spanner> insert into todo(id, title) values(101, "寿司食べたい！");
+$ spanner> insert into todo(id, title) values(101, "寿司食べたい！");
 Query OK, 1 rows affected (0.01 sec)
 
-spanner> select * from todo;
+$ spanner> select * from todo;
 +-----+----------------+
 | id  | title          |
 +-----+----------------+
