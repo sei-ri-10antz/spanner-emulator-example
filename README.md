@@ -36,12 +36,12 @@ Your active configuration is: [emulator]
 $ gcloud config configurations activate [ emulator | default ]
 
 # Create a spanner instance
-$ gcloud spanner instances create sandbox-instance --config=emulator-config --description="Develop Sandbox" --nodes=1
+$ gcloud spanner instances create sandbox-instance --config=emulator-config --description="Develop sandbox" --nodes=1
 
 # Show the project spanner instances
 $ gcloud spanner instances list --project=sandbox
 NAME              DISPLAY_NAME     CONFIG           NODE_COUNT  STATE
-sandbox-instance  Develop Sandbox  emulator-config  1           READY
+sandbox-instance  Develop sandbox  emulator-config  1           READY
 
 # Create a database
 $ gcloud spanner databases create sandbox-db --instance sandbox-instance
@@ -53,7 +53,7 @@ NAME        STATE  VERSION_RETENTION_PERIOD  EARLIEST_VERSION_TIME  KMS_KEY_NAME
 sandbox-db  READY
 ```
 
-### Using `spanner-cli` connect spanner-emulator
+### Using `spanner-cli` connect to spanner-emulator
 ```sh
 # install spanner-cli
 $ go get -u github.com/cloudspannerecosystem/spanner-cli
